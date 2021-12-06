@@ -1,54 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/reset.css" />
-    <title>Document</title>
+    <title>Selector</title>
   </head>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+    #FonBlock {
+      background-color: #363be9;
+    }
+    h1 {
+      color: #d8144b;
+      font-size: 23px;
+    }
+
+    .box {
+      background: #bb8586;
+      margin-bottom: 20px;
+    }
+    .first-box {
+      background: #e708e5;
+    }
+    h2 {
+      color: #fff;
+    }
+
+    .box h2 {
+      color: #ccc;
+    }
+    .media_box h2 {
+      color: #efe812;
+    }
+    /*#FonBlock .box h2{
+		color: #40E607 !important;
+	}
+	
+	body #FonBlock .box h2{
+		color:#07D5EC;
+	}*/
+
+    h2,
+    p {
+      font-size: 16px;
+    }
+
+    .box .heading {
+      color: white;
+      font-size: 32px;
+    }
+
+    .last-box h2 {
+      color: black;
+      font-size: 32px;
+    }
+  </style>
   <body>
-    <style>
-      .shop {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
+    <section id="FonBlock">
+      <h1>Hello my world</h1>
+      <div class="box first-box media_box">
+        <h2>Heading</h2>
+        <p>
+          Lorem ipsum dolar lorem ipsum dolar Lorem ipsum dolar lorem ipsum
+          dolar Lorem ipsum dolar lorem ipsum dolar Lorem ipsum dolar lorem
+          ipsum dolar Lorem ipsum dolar lorem ipsum dolar Lorem ipsum dolar
+          lorem ipsum dolar Lorem ipsum dolar lorem ipsum dolar Lorem ipsum
+          dolar lorem ipsum dolar Lorem ipsum dolar lorem ipsum dolar
+        </p>
+      </div>
 
-      .shoes {
-        width: 15%;
-        height: auto;
-      }
+      <div class="box">
+        <h2>Heading</h2>
+        <p>
+          Lorem ipsum dolar lorem ipsum dolar Lorem ipsum dolar lorem ipsum
+          dolar Lorem ipsum dolar lorem ipsum dolar Lorem ipsum dolar lorem
+          ipsum dolar Lorem ipsum dolar lorem ipsum dolar Lorem ipsum dolar
+          lorem ipsum dolar Lorem ipsum dolar lorem ipsum dolar Lorem ipsum
+          dolar lorem ipsum dolar Lorem ipsum dolar lorem ipsum dolar
+        </p>
+      </div>
 
-      .new-price:hover {
-        text-decoration: underline;
-      }
-
-      .old-price {
-        text-decoration: line-through;
-      }
-
-      .description {
-        width: 300px;
-        text-align: justify;
-        text-indent: 20px;
-      }
-    </style>
-    <div class="shop">
-      <img
-        src="./img/Bravada_Shoes_Black_FV8085_01_standard.jpg"
-        class="shoes"
-        alt="shoes"
-      />
-      <p class="new-price">18.99$</p>
-      <p class="old-price">29.99$</p>
-      <p class="description">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore vero,
-        perferendis rem iste culpa, enim tenetur omnis incidunt laudantium
-        ducimus sequi ea adipisci maiores, nesciunt dolores aut beatae sit
-        assumenda.
-      </p>
-    </div>
+      <div class="box last-box">
+        <h2>Heading</h2>
+        <p>
+          Lorem ipsum dolar lorem ipsum dolar Lorem ipsum dolar lorem ipsum
+          dolar Lorem ipsum dolar lorem ipsum dolar Lorem ipsum dolar lorem
+          ipsum dolar Lorem ipsum dolar lorem ipsum dolar Lorem ipsum dolar
+          lorem ipsum dolar Lorem ipsum dolar lorem ipsum dolar Lorem ipsum
+          dolar lorem ipsum dolar Lorem ipsum dolar lorem ipsum dolar
+        </p>
+      </div>
+    </section>
   </body>
 </html>
