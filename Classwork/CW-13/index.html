@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Selector</title>
+  </head>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    .table tr:nth-child(odd) {
+      background-color: beige;
+      cursor: pointer;
+    }
+    .table tr:hover:nth-child(odd) {
+      background-color: aqua;
+    }
+
+    .tel_main a:first-child:before {
+      content: "+";
+    }
+    .tel_main a:nth-child(2):after {
+      content: "-";
+    }
+    .tel_main a:last-child:before {
+      content: "*";
+    }
+  </style>
+  <body>
+    <section id="content">
+      <table class="table">
+        <tr>
+          <td>First column</td>
+          <td>First column</td>
+          <td>First column</td>
+        </tr>
+        <tr>
+          <td>Second column</td>
+          <td>Second column</td>
+          <td>Second column</td>
+        </tr>
+        <tr>
+          <td>Third column</td>
+          <td>Third column</td>
+          <td>Third column</td>
+        </tr>
+      </table>
+      <div class="tel_main">
+        <a href="1111">111</a>
+        <a href="1111">111</a>
+        <a href="1111">111</a>
+      </div>
+    </section>
+  </body>
+</html>
