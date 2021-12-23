@@ -19,8 +19,12 @@ header {
   background-color: antiquewhite;
 }
 .container {
-  width: 1000px;
+  width: 1200px;
   margin: 0 auto;
+}
+
+.clear {
+  clear: both;
 }
 
 .contact-info {
@@ -87,6 +91,7 @@ ul.sub-menu {
   left: 0;
   top: 37px;
   width: 200px;
+  z-index: 1;
 }
 
 ul.sub-menu li:nth-child(4) {
@@ -110,28 +115,105 @@ ul.sub-menu-child {
   display: block;
 }
 
-.background {
-  background-image: url(../img/yellow-sunflowers-blossom-ztmo48gma8rqgngx.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding-bottom: 220px;
-  margin-bottom: 210px;
+.main-content {
+  background-color: rgb(243, 243, 243);
+}
+.blog {
+  padding-top: 50px;
+  padding-bottom: 250px;
 }
 
-.square {
-  display: flex;
-  row-gap: 10px;
-  flex-direction: column;
-  width: 700px;
-  padding: 50px 50px 80px 50px;
-  background-color: rgba(214, 214, 214, 0.678);
-  margin-bottom: 50px;
+.blog .article {
+  width: 32%;
+  float: left;
+  margin-right: 15px;
+  margin-bottom: 55px;
+}
+
+.picture-article {
+  width: 80%;
+  max-width: auto;
+  height: auto;
+  margin-bottom: 30px;
+}
+
+.blog .article .title a {
+  font-family: NeuteralBold;
+  font-size: 32px;
+  color: rgb(122, 118, 118);
+  margin-bottom: 8px;
+  font-weight: bold;
+  height: 47px;
+  overflow: hidden;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+.blog .article .title a:hover {
+  color: rgb(121, 7, 7);
+}
+
+.text {
+  font-family: Rany;
+  line-height: 23px;
+  font-size: 20px;
+  text-align: justify;
+}
+.button {
+  font-family: NeuteralBold;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 20px;
+  font-size: 32px;
+  background-color: #63b9e7;
+  color: rgb(173, 51, 146);
+  padding: 20px 0;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: rgb(214, 137, 37);
+}
+
+.picture {
+  position: relative;
+}
+.picture:before {
+  display: none;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: rgb(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+.picture:hover:before {
+  display: block;
+}
+
+.no-text {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  color: rgb(79, 210, 250);
+  top: 50%;
+  left: 50%;
+  font-family: sans-serif;
+  font-weight: 600;
+  font-size: 42px;
+  display: none;
+}
+.picture:hover .no-text {
+  display: block;
+  border-radius: 15px;
 }
 
 footer {
   background: antiquewhite;
-  padding: 62.5px 0px;
+  padding: 40px 0px;
   position: absolute;
   left: 0;
   bottom: 0;
