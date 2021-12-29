@@ -130,6 +130,36 @@ ul.sub-menu-child {
   margin-bottom: 55px;
 }
 
+.picture {
+  overflow: hidden;
+  transition: all 1s ease-out;
+}
+
+.picture img {
+  transition: all 1s ease-out;
+}
+
+.picture img:hover {
+  margin-bottom: 200px;
+  transform: scale(1.1);
+}
+
+.random-text {
+  transition: all 1s ease-out;
+}
+
+.random-text:hover {
+  margin-bottom: 200px;
+  transform: scale(1.1);
+}
+
+.logo {
+  width: 10%;
+  min-width: auto;
+  height: auto;
+  transition: all 1s ease-out;
+}
+
 .picture-article {
   width: 80%;
   max-width: auto;
@@ -257,4 +287,53 @@ footer .righted {
 
 .links:hover {
   text-decoration: underline;
+}
+
+.block-text {
+  position: absolute;
+  transition: ease-in 0.3s;
+  width: 100%;
+  left: 55%;
+  bottom: -150px;
+  opacity: 0;
+}
+
+.picture:hover .logo {
+  position: absolute;
+  transition: ease-in 0.3s;
+  width: 10%;
+  left: 55%;
+  bottom: -250px;
+  opacity: 0;
+  
+}
+
+.picture:hover .no-text h2 {
+  position: absolute;
+  transition: ease-in 0.3s;
+  width: 10%;
+  left: 50%;
+  bottom: -50px;
+  opacity: 0;
+  
+}
+
+
+.picture:hover .block-text {
+  opacity: 1;
+  bottom: 40%;
+  transform: translate(-50%);
+  
+}
+
+.picture:hover .logo {
+  transform: translate(-50%);
+  opacity: 1;
+  bottom: 80%;
+}
+
+.picture:hover .no-text h2 {
+  opacity: 1;
+  bottom: 120%;
+  transform: translate(-50%);
 }
